@@ -16,7 +16,7 @@ const ArticleList = () => {
       <h1>Article List</h1>
       <ol>
         {articles.map(article => (
-          <li key={articles.id}>
+          <li key={article.id}>
             <NavLink to={`${article.id}`}>{article.title}</NavLink>
           </li>
         ))}
