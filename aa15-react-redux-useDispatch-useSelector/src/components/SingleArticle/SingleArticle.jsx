@@ -8,13 +8,13 @@ const SingleArticle = () => {
   const article = articleState.find(article => article.id === id)
   return (
     <div className='singleArticle'>
-      <h1>{article.title}</h1>
+      <h1>{article?.title}</h1>
       <img
-        src={article.imageUrl}
-        alt={article.title}
+        src={article?.imageUrl}
+        alt={article?.title}
       />
       <p>
-        {article.body}
+        {article?.body}
       </p>
     </div>
   );
